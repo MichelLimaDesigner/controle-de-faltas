@@ -12,7 +12,7 @@ function save(){
   //----------- Botão que dispara a função
   let buttonSave = document.getElementById("buttonSave");
   
-  db.collection("testeisys").add({
+  db.collection("teste1").add({
     materia: materia,
     dia: dia,
     professor: professor,
@@ -26,6 +26,7 @@ function save(){
     document.getElementById("campoProf").value = '';
     document.getElementById("campoSala").value = '';
     document.getElementById("campoFaltas").value = '';
+    location.reload();
   })
     .catch(function(error) {
     console.error("Error adding document: ", error);
@@ -39,7 +40,7 @@ var table = document.querySelector('#table');
 
 table.innerHTML = "";
 
-db.collection("testeisys").get().then((querySnapshot) => {
+db.collection("teste1").get().then((querySnapshot) => {
   querySnapshot.forEach((doc) => {
     console.log(`${doc.id} => ${doc.data()}`);
     table.innerHTML +=`

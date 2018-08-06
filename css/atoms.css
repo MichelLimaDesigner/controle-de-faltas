@@ -10,11 +10,11 @@ body {
   margin: 0;
   color: #444;
   text-align: center;
-  background-color: #e0e0e0;
+  background-color: #f0f0f0;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Merriweather", serif;
+  font-family: "Open Sans", serif;
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
@@ -24,14 +24,7 @@ p, a{
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-}
-
-header{
-  width: 100%;
-  margin: 0px;
-  padding: 20px 0px;
-  text-align: center;
-  background-color:aquamarine;
+  text-decoration: none;
 }
 
 .container{
@@ -58,6 +51,26 @@ header{
   box-sizing: border-box;
 }
 
+.title{
+  font-size: 1.8em;
+}
+
+.fixed-top{
+  position: fixed;
+  top: 0px;
+  left: 0px;
+}
+
+.fixed-bottom{
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+}
+
+.spacing{
+  width: 100%;
+  height: 100px;
+}
 
 /*----------------------*/
 
@@ -85,6 +98,12 @@ header{
 .table-close{
   width: 70%;
   color: red;
+}
+
+/*------------- FOOTER */
+
+.footer-by{
+  
 }
 
 /*----------- MOBILE SCREEN SETTINGS */
