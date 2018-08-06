@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Made with Thimble</title>
+    <link rel="stylesheet" href="css/atoms.css">
+    <link rel="stylesheet" href="css/molecule.css">
+    <link rel="stylesheet" href="css/organisms.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <!-- FireBase -->
+    <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-firestore.js"></script>
+    <script src="firebase.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1 class="title"> Controle de faltas </h1>
+    </header>
+
+    <div class="box">
+      <div class="form-container" id="formulario">
+        <input type="text" name="materia" class="campo" autofocus placeholder="Matéria" id="campoMateria" required><br>
+        <input type="text" name="dia" class="campo" placeholder="Dia da Semana" id="campoDia" required><br>
+        <input type="text" name="prof" class="campo" placeholder="Professor" id="campoProf" required><br>
+        <input type="text" name="sala" class="campo" placeholder="Sala" id="campoSala" required><br>
+        <input type="number" name="faltas" class="campo" placeholder="Faltas" id="campoFaltas" required><br>
+        <div class="button" id="buttonSave" onclick="save()"> Salvar</div>
+      </div>
+    </div>
+    
+    <div class="button" id="addButton" onclick="add()">
+      Adicionar Matéria
+    </div>
+    
+      <div class="container" id="container">
+          <div class="table" id="table">
+          </div>
+       </div>
+  </body>
+  <script
+          src="https://code.jquery.com/jquery-3.3.1.js"
+          integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+          crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</html>
